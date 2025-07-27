@@ -1,0 +1,87 @@
+/* Whole Page Background */
+body {
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Glass Column Styling */
+.kanban-column {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+  backdrop-filter: blur(14px); /* <-- BLUR here */
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover effect */
+.kanban-column:hover {
+  transform: scale(1.01);
+}
+
+/* Glass Task Card */
+.task-card {
+  background: rgba(255, 255, 255, 0.25); /* Semi-transparent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  border: none !important;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover shadow */
+.task-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Remove checkbox outline */
+.task-card input[type="checkbox"] {
+  accent-color: #2563eb; /* blue */
+}
+
+/* Task text */
+.task-card .card-text {
+  font-size: 0.95rem;
+}
+
+/* Input styles */
+input[type="text"]::placeholder {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Button tweaks */
+.btn-primary,
+.btn-outline-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.btn-outline-success:hover {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #fff;
+}
+
+.task-card input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.card-text {
+  font-size: 0.92rem;
+}
